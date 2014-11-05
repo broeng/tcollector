@@ -1,3 +1,18 @@
+tcollector (1.0-6-cwc-10) stable; urgency=low
+
+  * Add collector for monit instances
+
+ -- Simon Broeng Jensen <sbj@cwconsult.dk>  Wed, 8 Nov 2014 22:47:00 +0100
+
+tcollector (1.0-6-cwc) stable; urgency=low
+
+  * Add tun-devices to ifstat collector
+  * Add python-psycopg2 as dependency to debian 
+    package, for postgresql collector.
+  * Fix issues in nfsstats.py
+ 
+ -- Simon Broeng Jensen <sbj@cwconsult.dk>  Wed, 8 Nov 2014 22:47:00 +0100
+
 tcollector (1.0-6) stable; urgency=low
 
   * Small tweaks and unification of init wrappers.
