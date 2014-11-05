@@ -13,7 +13,7 @@ clean:
 	rm -f tcollector
 
 override_dh_gencontrol:
-	echo python:Depends=python >> debian/tcollector.substvars
+	echo "python:Depends=python, python-psycopg2" >> debian/tcollector.substvars
 	dh_gencontrol
 
 override_dh_installinit:
