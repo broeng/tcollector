@@ -57,7 +57,7 @@ def main():
         ts = int(time.time())
         for line in f_netdev:
             m = re.match("\s+(eth\d+|em\d+_\d+/\d+|em\d+_\d+|em\d+|"
-                         "p\d+p\d+_\d+/\d+|p\d+p\d+_\d+|p\d+p\d+):(.*)", line)
+                         "p\d+p\d+_\d+/\d+|p\d+p\d+_\d+|p\d+p\d+|tun\d+):(.*)", line)
             if not m:
                 continue
             intf = m.group(1)
