@@ -1,3 +1,21 @@
+tcollector (1.0-6-cwc-25) stable; urgency=low
+
+  * Add collector for clockskew
+
+ -- Simon Broeng Jensen <sbj@cwconsult.dk>  Fri, 4 Dec 2014 14:22:00 +0100
+
+tcollector (1.0-6-cwc-17) stable; urgency=low
+
+  * Add TLS encryption support to TSD connections
+
+ -- Simon Broeng Jensen <sbj@cwconsult.dk>  Fri, 30 Nov 2014 17:47:00 +0100
+
+tcollector (1.0-6-cwc-12) stable; urgency=low
+
+  * Add collector for metrics
+
+ -- Simon Broeng Jensen <sbj@cwconsult.dk>  Fri, 28 Nov 2014 14:47:00 +0100
+
 tcollector (1.0-6-cwc-10) stable; urgency=low
 
   * Add collector for monit instances
