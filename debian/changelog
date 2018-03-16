@@ -1,3 +1,9 @@
+tcollector (1.0-6-cwc-27) stable; urgency=low
+
+  * Add collector for useragent
+
+ -- Klaus Birkelund Abildgaard Jensen <kb@cwconsult.dk>  Fri, 16 Mar 2018 10:23:00 +0100
+
 tcollector (1.0-6-cwc-26) stable; urgency=low
 
   * Add collector for useragent
