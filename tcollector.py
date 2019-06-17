@@ -691,6 +691,13 @@ class SenderThread(threading.Thread):
     def _valid_certificate_name(self, cert, host_name):
         """Check commonName from supplied certificate matches given hostname"""
         cert_name = None
+        # start by testing using provided hostname matching
+        try:
+            # Returns nothing on success, throws error on failure
+            ssl.match_hostname(cert, host_name)
+            return True
+        except ssl.CertificateError:
+            pass
         # start by extracting the commonName from certificate
         for subject in cert['subject']:
             field, value = subject[0]
