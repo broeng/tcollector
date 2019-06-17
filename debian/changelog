@@ -1,3 +1,9 @@
+tcollector (1.0-6-cwc-28) stable; urgency=low
+
+  * Use ssl.match_hostname first for certificate hostname verification
+
+ -- Simon Broeng Jensen <sbj@cwconsult.dk>  Mon, 17 Jun 2019 15:40:00 +0100
+
 tcollector (1.0-6-cwc-27) stable; urgency=low
 
   * Add collector for useragent
