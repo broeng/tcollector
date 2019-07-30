@@ -1,3 +1,10 @@
+tcollector (1.0-6-cwc-29) stable; urgency=low
+
+  * Add collector for monitoring postgresql locks
+
+ -- Morten B. Rasmussen <mbr@cwconsult.dk>  Thu, 25 Jul 2019 13:43:00 +0100
+
+
 tcollector (1.0-6-cwc-28) stable; urgency=low
 
   * Use ssl.match_hostname first for certificate hostname verification
