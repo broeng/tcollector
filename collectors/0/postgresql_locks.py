@@ -56,7 +56,7 @@ def change_user(user):
     os.setuid(uid)
 
 def default(value):
-    return value if value is not None else "N/A"
+    return value.replace(" ", "_") if value is not None else "NA"
 
 def postgres_connect(sockdir):
     """ Connects to the PostgreSQL server using the specified socket file.
@@ -109,9 +109,10 @@ def collect(db):
             # Calculate total seconds spend in milliseconds and cap to positive values
             total_age = age.total_seconds() if age is not None else 0
             age_milli = max([total_age * 1000, 0])
+            ts = time.time()
             # Print the datum, tscollector will listen on std out
-            print("postgresql.locks %i database='%s' mode='%s' granted='%s' user='%s' pid='%i'" %
-                  (age_milli, default(dbname), default(mode), default(granted), default(user), default(pid)))
+            print("postgresql.locks %i %i database=%s mode=%s granted=%s user=%s pid=%s" %
+                  (ts, age_milli, default(dbname), default(mode), default(granted), default(user), default(pid)))
 
     except (EnvironmentError, EOFError, RuntimeError, socket.error), e:
         if isinstance(e, IOError) and e[0] == errno.EPIPE:

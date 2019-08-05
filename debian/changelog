@@ -1,3 +1,10 @@
+tcollector (1.0-6-cwc-30) stable; urgency=low
+
+  * Fix issue with missing timestamp for postgresql locks monitor
+
+ -- Morten B. Rasmussen <mbr@cwconsult.dk>  Thu, 5 Aug 2019 15:35:00 +0100
+
+
 tcollector (1.0-6-cwc-29) stable; urgency=low
 
   * Add collector for monitoring postgresql locks
