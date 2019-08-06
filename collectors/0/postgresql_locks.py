@@ -56,7 +56,7 @@ def change_user(user):
     os.setuid(uid)
 
 def default(value):
-    return value.replace(" ", "_") if value is not None else "NA"
+    return str(value).replace(" ", "_") if value is not None else "NA"
 
 def postgres_connect(sockdir):
     """ Connects to the PostgreSQL server using the specified socket file.
