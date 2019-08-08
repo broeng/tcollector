@@ -1,16 +1,20 @@
+tcollector (1.0-6-cwc-31) stable; urgency=low
+
+  * Fix issue with string replacement in non-string types
+
+ -- Morten B. Rasmussen <mbr@cwconsult.dk>  Thu, 6 Aug 2019 16:12:00 +0100
+
 tcollector (1.0-6-cwc-30) stable; urgency=low
 
   * Fix issue with missing timestamp for postgresql locks monitor
 
  -- Morten B. Rasmussen <mbr@cwconsult.dk>  Thu, 5 Aug 2019 15:35:00 +0100
 
-
 tcollector (1.0-6-cwc-29) stable; urgency=low
 
   * Add collector for monitoring postgresql locks
 
  -- Morten B. Rasmussen <mbr@cwconsult.dk>  Thu, 25 Jul 2019 13:43:00 +0100
-
 
 tcollector (1.0-6-cwc-28) stable; urgency=low
 
